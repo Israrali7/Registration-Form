@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #fbc2eb, #a6c1ee);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.registration-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+input[type="text"],
+input[type="date"],
+input[type="email"],
+ input[type="tel"]{
+    /* width: calc(50% - 10px); */
+    padding: 10px;
+    width: 220px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 15px;
+ }
+ input[type="date"] {
+    width: 470px;
+    margin-bottom: 15px;
+}
+label {
+    margin-right: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+input[type="radio"] {
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.gen{
+    height: 30px;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+/* Style the select dropdown */
+select {
+    width: 240px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    color: #333;
+    appearance: none;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  
+  /* Style the dropdown arrow */
+  select:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  /* Style the option elements */
+  option {
+    padding: 10px;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  /* Change background color when an option is selected */
+  select:focus option:checked {
+    background-color: #0056b3;
+    color: white;
+  }
+  
