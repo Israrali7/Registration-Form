@@ -12,12 +12,11 @@
     <div class="container">
         <h2>Registration Form</h2>
         <div class="main">
-            <form action="">
+            <form onsubmit="submitForm(event)">
                 <input type="text" id="fname" placeholder="First Name" required>
                 <input type="text" id="lname" placeholder="Last Name" required>
-
-
                 <input type="date" id="date" placeholder="Date of Birth" required>
+
                 <div class="gen">
                     <label>Gender:</label>
                     <input type="radio" name="gender" id="female" value="Female" required>
@@ -27,22 +26,24 @@
                     <input type="radio" name="gender" id="other" value="Other">
                     <label for="other">Other</label>
                 </div>
-                <input type="email" placeholder="Email" required>
-                <input type="tel" placeholder="Phone Number" required minlength="11">
+
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="tel" id="num" placeholder="Phone Number" required minlength="11">
+
                 <div class="dropDown">
-                    <select required>
+                    <select id="Course" required>
                         <option value="" disabled selected>Select the Course</option>
-                        <option value="subject1">Web and Mobile Application</option>
-                        <option value="subject2">Graphics</option>
-                        <option value="subject3">Python Language </option>
+                        <option value="Web and Mobile Application">Web and Mobile Application</option>
+                        <option value="Graphics">Graphics</option>
+                        <option value="Python Language">Python Language </option>
                     </select>
                 </div>
                 <button type="submit">Submit</button>
             </form>
         </div>
-
     </div>
-    <script src="app.js"></script>
+<script src="app.js"></script>   
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 
 </html>
