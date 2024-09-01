@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Student Data</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <section>
+        <!-- Header -->
+        <header class="bg-white space-y-4 p-4 sm:px-8 sm:py-6 lg:p-4 xl:px-8 xl:py-6">
+            <div class="flex items-center justify-between">
+                <h1 class="font-semibold text-3xl text-teal-600">Std Data Collection</h1>
+                <!-- select Option -->
+                <select
+                    class="searchKey focus:ring-2 focus:ring-teal-700 focus:outline-none appearance-none rounded-md py-2 p-4 ring-1 ring-slate-200 shadow-sm text-l leading-6 text-slate-900 placeholder-slate-400">
+                    <option value="" disabled selected>What are you searching</option>
+                    <option value="First Name">First Name</option>
+                    <option value="Last Name">Last Name</option>
+                    <option value="Email">Email</option>
+                    <option value="Mobile Number">Mobile Number</option>
+                    <option value="Course">Course</option>
+                </select>
+            </div>
+            <!-- Search Bar -->
+            <form class="group relative">
+                <input id="searchBar"
+                    class="focus:ring-2 focus:ring-teal-700 focus:outline-none appearance-none w-full text-l leading-6 text-slate-900 placeholder-slate-400 rounded-md py-2 pl-10 ring-1 ring-slate-200 shadow-sm"
+                    type="text" aria-label="Filter projects" placeholder="Filter projects...">
+            </form>
+        </header>
+
+        <!-- Search Result container -->
+        <div>
+            <h1 class="font-semibold text-3xl text-teal-600 mx-7">Search Result</h1>
+            <ul
+                class="bg-slate-50 p-4 sm:px-8 sm:pt-6 sm:pb-8 lg:p-4 xl:px-8 xl:pt-6 xl:pb-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-4 text-sm leading-6">
+                <table>
+                    <tr>
+                        <th>First Name</th>
+                        <th> Last Name</th>
+                        <th>Email</th>
+                        <th>Mobile Number</th>
+                        <th>Course</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+        </div>
+        <!--  Student Data container -->
+        <div>
+            <h1 class="font-semibold text-3xl text-teal-600 mx-7">Student Data</h1>
+            <ul
+                class="bg-slate-50 p-4 sm:px-8 sm:pt-6 sm:pb-8 lg:p-4 xl:px-8 xl:pt-6 xl:pb-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-4 text-sm leading-6">
+                <table>
+                    <tr>
+                        <th>First Name</th>
+                        <th> Last Name</th>
+                        <th>Email</th>
+                        <th>Mobile Number</th>
+                        <th>Course</th>
+                    </tr>
+                    <tr>
+                        <td>Israar </td>
+                        <td>Ali</td>
+                        <td>israr@gmail.com</td>
+                        <td>0397564564</td>
+                        <td>Web and Mobile Application</td>
+                    </tr>
+                    <tr>
+                        <td>Israar </td>
+                        <td>Ali</td>
+                        <td>israr@gmail.com</td>
+                        <td>0397564564</td>
+                        <td>Web and Mobile Application</td>
+                    </tr>
+                    <tr>
+                        <td>Israar </td>
+                        <td>Ali</td>
+                        <td>israr@gmail.com</td>
+                        <td>0397564564</td>
+                        <td>Web and Mobile Application</td>
+                    </tr>
+                </table>
+            </ul>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>
